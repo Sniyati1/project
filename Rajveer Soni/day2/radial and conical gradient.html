@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-flex;
+            height:300px;
+            width:300px;
+            border-radius: 50%;
+        }
+        .box1{
+            background:radial-gradient(pink,red);
+        }
+        .box2{
+            background:radial-gradient(circle,green,yellow);
+        }
+        .box3{
+            background:radial-gradient(circle at top right,red,blue);
+        }
+        .box4{
+            background:conic-gradient(red,yellow,green,blue,red);
+        }
+        .pie{
+            background:conic-gradient(red 0deg 90deg, blue 90deg 180deg, green 180deg 270deg, yellow 270deg 360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="pie"></div>
+</body>
+</html>

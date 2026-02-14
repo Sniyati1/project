@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1{
+            height:200px;
+            width:1600px;
+            display:flex;
+            background-color:brown;
+        }
+        @media(max-width:1024px){
+            .h1{width:200px;}/*tablet*/
+        }
+
+        @media(max-width:768px){
+            .h1{width:100%;
+            position:static;}/*mobile*//*small-mobile 480px*/
+        }
+        @media()
+    </style>
+</head>
+<body>
+    <div class="h1">
+        <div class="d1">hello</div>
+        <div class="d1">hello</div>
+        <div class="d1">hello</div>
+        <div class="d1">hello</div>
+    </div>
+</body>
+</html>

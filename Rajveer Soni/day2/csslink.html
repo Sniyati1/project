@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Link</title>
+    <style>
+        a{
+            padding:5px 10px;
+            background-color:transparent;
+            transition:backrgound 0.3s;
+        }
+        a:link{
+            color:blue;
+            text-decoration:none;
+        }
+        a:visited{
+            color:purple;
+        }
+        a:hover{
+            color:red;
+            text-decoration:underline;
+            background-color:#f0f0f0;
+            border-radius:20%;
+        }
+        a:active{
+            color:green;
+        }
+        .after{position:relative;
+        text-decoration:none;}
+        .after::after{
+            content:'';
+            position: absolute;
+            width:0%;
+            height:2px;
+            bottom:-2px;
+            left:0;
+            background-color:#667eea;
+            transition:width 0.3s;
+        }
+        .after:hover::after{
+            width:100%;
+        }
+        .btn-link:{
+            display:inline-block;
+            padding:10px 20px;
+            background-color:#667eea;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+            transition: all 0.3s;
+        }
+        .btn-link:hover{
+            background-color: #5568d3;
+            transform:translateY(-2px);
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS List stlye</h1>
+    <a href="https://google.com">Google link</a><br><br>
+    <a class="after" href="#">Link</a><br> <br>
+    <button class="btn-link">Click here</button>
+</body>
+</html>

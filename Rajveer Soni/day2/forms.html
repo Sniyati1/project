@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit" method="Post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+         
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" required minlength="6" maxlength="10"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" min="18" max="40" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="male" required><label for="male">Male</label>
+        <input type="radio" name="female" required><label for="female">Female</label><br><br>
+
+        <label for="number">phone:</label>
+        <input type="tel" name="number" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">Select Country</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="in">India</option>
+        </select><br><br>
+
+        <label for="car">Cars:</label>
+        <select name="car">
+            <optgroup label="German Cars">
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+            <optgroup label="Japnese Cars">
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" col="30"> </textarea><br><br>
+
+        <label for="search">Search:</label>
+        <input type="search"><br><br>
+        
+        <button type="reset">Reset</button><br><br>
+
+        <button type="button" onclick="alert('clicked!')">Click Me</button><br><br>
+
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
+
+
